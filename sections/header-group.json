@@ -11,10 +11,14 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "top-bar": {
-      "type": "top-bar",
+    "top-nav": {
+      "type": "top-nav",
       "custom_css": [
-        ".nav-main {max-width: 20%; list-style-type: none;}"
+        ".top-nav {display: flex; gap: 1em; align-items: center; justify-content: space-between; padding: 0 1em;}",
+        ".left-nav,.right-nav {display: flex; max-width: fit-content; list-style-type: none; margin: 0; padding: 0;}",
+        ".left-nav li {padding: 6px 8px;}",
+        ".left-nav li a {margin-bottom: 2px;}",
+        ".left-nav a img {height: 14px;}"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -78,7 +82,7 @@
     }
   },
   "order": [
-    "top-bar",
+    "top-nav",
     "announcement-bar",
     "header"
   ]

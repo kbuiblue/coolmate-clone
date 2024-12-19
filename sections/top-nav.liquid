@@ -1,0 +1,26 @@
+{% render 'top-nav-left' %}
+{% render 'top-nav-right' %}
+{% schema %}
+{
+  "name": "Top Nav",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-4"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Nav"
+    }
+  ],
+  "class": "top-nav"
+}
+{% endschema %}
