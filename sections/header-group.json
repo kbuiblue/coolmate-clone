@@ -11,23 +11,14 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "header": {
-      "type": "header",
+    "top-bar": {
+      "type": "top-bar",
+      "custom_css": [
+        ".nav-main {display: flex; max-width: fit-content; list-style-type: none; margin: 0;}",
+        ".nav-main li {padding: 6px 8px; }"
+      ],
       "settings": {
-        "logo_position": "middle-left",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "enable_customer_avatar": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "text": "Lol"
       }
     },
     "announcement-bar": {
@@ -53,7 +44,7 @@
         "announcement_DD49ma"
       ],
       "custom_css": [
-        ".announcement-bar {gap: 1em}",
+        ".announcement-bar {gap: 0.5em;}",
         ".announcement-bar__link {width: max-content; height: fit-content;}"
       ],
       "settings": {
@@ -66,16 +57,29 @@
         "enable_language_selector": false
       }
     },
-    "top-bar": {
-      "type": "top-bar",
+    "header": {
+      "type": "header",
       "settings": {
-        "text": "Top Bar"
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
   "order": [
-    "header",
+    "top-bar",
     "announcement-bar",
-    "top-bar"
+    "header"
   ]
 }
