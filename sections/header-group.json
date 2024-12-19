@@ -36,16 +36,28 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Nhìn lại hành trình của bạn và Coolmate năm 2024",
             "link": ""
+          }
+        },
+        "announcement_DD49ma": {
+          "type": "announcement",
+          "settings": {
+            "text": "Khám Phá",
+            "link": "https://www.coolmate.me/lookback2024?itm_source=topbar"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_DD49ma"
+      ],
+      "custom_css": [
+        ".announcement-bar {gap: 1em}",
+        ".announcement-bar__link {width: max-content; height: fit-content;}"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -53,10 +65,17 @@
         "enable_country_selector": false,
         "enable_language_selector": false
       }
+    },
+    "top-bar": {
+      "type": "top-bar",
+      "settings": {
+        "text": "Top Bar"
+      }
     }
   },
   "order": [
     "header",
-    "announcement-bar"
+    "announcement-bar",
+    "top-bar"
   ]
 }
