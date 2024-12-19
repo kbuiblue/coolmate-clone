@@ -52,6 +52,10 @@
         "announcement-bar-0",
         "announcement_DD49ma"
       ],
+      "custom_css": [
+        ".announcement-bar {gap: 1em}",
+        ".announcement-bar__link {width: max-content; height: fit-content;}"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "show_line_separator": true,
