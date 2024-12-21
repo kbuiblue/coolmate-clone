@@ -11,14 +11,98 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "top-bar": {
-      "type": "top-bar",
+    "top-nav": {
+      "type": "top-nav",
+      "blocks": {
+        "image_RtHyYH": {
+          "type": "image",
+          "settings": {
+            "link_url": "",
+            "image_url": "https://mcdn.coolmate.me/image/November2024/mceclip0_77.png",
+            "alt": "logo-coolclub",
+            "position": "left"
+          }
+        },
+        "image_y63LrN": {
+          "type": "image",
+          "settings": {
+            "link_url": "",
+            "image_url": "https://www.coolmate.me/images/logo-84rising-own.svg",
+            "alt": "logo-84rising",
+            "position": "left"
+          }
+        },
+        "image_kUCwMp": {
+          "type": "image",
+          "settings": {
+            "link_url": "",
+            "image_url": "https://www.coolmate.me/images/logo-coolxprint.svg",
+            "alt": "logo-coolxprint",
+            "position": "left"
+          }
+        },
+        "link_bpN6cP": {
+          "type": "link",
+          "settings": {
+            "title": "Tham gia CoolClub",
+            "link": "",
+            "position": "right"
+          }
+        },
+        "link_VdbWCY": {
+          "type": "link",
+          "settings": {
+            "title": "Blog",
+            "link": "",
+            "position": "right"
+          }
+        },
+        "link_FTmA7A": {
+          "type": "link",
+          "settings": {
+            "title": "Về Coolmate",
+            "link": "",
+            "position": "right"
+          }
+        },
+        "link_NPWrqY": {
+          "type": "link",
+          "settings": {
+            "title": "Trung tâm CSKH",
+            "link": "",
+            "position": "right"
+          }
+        },
+        "link_HP3geD": {
+          "type": "link",
+          "settings": {
+            "title": "Đăng Nhập",
+            "link": "",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "image_RtHyYH",
+        "image_y63LrN",
+        "image_kUCwMp",
+        "link_bpN6cP",
+        "link_VdbWCY",
+        "link_FTmA7A",
+        "link_NPWrqY",
+        "link_HP3geD"
+      ],
       "custom_css": [
-        ".nav-main {display: flex; max-width: fit-content; list-style-type: none; margin: 0;}",
-        ".nav-main li {padding: 6px 8px; }"
+        ".top-nav {display: flex; gap: 1em; align-items: center; justify-content: space-between; padding: 0 1em;}",
+        ".left-nav,.right-nav {display: flex; max-width: fit-content; list-style-type: none; margin: 0; padding: 0;}",
+        ".left-nav li {padding: 6px 8px;}",
+        ".left-nav li a {margin-bottom: 2px;}",
+        ".left-nav a img {height: 14px;}",
+        ".right-nav {gap: 1em;}",
+        ".right-nav li a {color: #1d1d1d; text-decoration: none;}"
       ],
       "settings": {
-        "text": "Lol"
+        "color_scheme": "scheme-1"
       }
     },
     "announcement-bar": {
@@ -45,7 +129,8 @@
       ],
       "custom_css": [
         ".announcement-bar {gap: 0.5em;}",
-        ".announcement-bar__link {width: max-content; height: fit-content;}"
+        ".announcement-bar__link {width: max-content; height: fit-content; text-decoration: underline;}",
+        ".announcement-bar__link:hover {text-decoration: none;}"
       ],
       "settings": {
         "color_scheme": "scheme-2",
@@ -59,16 +144,24 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header {padding-top: 0; padding-bottom: 0;}",
+        ".header__menu-item {color: rgba(var(--color-foreground));}",
+        ".header__menu-item:hover span {text-decoration: none;}",
+        ".header__heading-logo {width: 76px;}",
+        ".list-menu li:hover {background: #3c3c3c;}",
+        ".link--text:hover {color: rgba(var(--color-foreground));}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "color_scheme": "scheme-4",
+        "menu_color_scheme": "scheme-4",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "enable_customer_avatar": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
@@ -78,7 +171,7 @@
     }
   },
   "order": [
-    "top-bar",
+    "top-nav",
     "announcement-bar",
     "header"
   ]
