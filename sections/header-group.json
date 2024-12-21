@@ -145,10 +145,12 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".header {padding-top: 0; padding-bottom: 0;}",
+        ".header {padding: 0; margin: unset; width: 100%; max-width: none; display: flex; justify-content: space-around;}",
         ".header__menu-item {color: rgba(var(--color-foreground));}",
         ".header__menu-item:hover span {text-decoration: none;}",
+        ".header__inline-menu {height: 65px; display: flex; width: 50%; justify-content: flex-end;}",
         ".header__heading-logo {width: 76px;}",
+        ".list-menu li {height: 100%; display: flex;}",
         ".list-menu li:hover {background: #3c3c3c;}",
         ".link--text:hover {color: rgba(var(--color-foreground));}"
       ],
